@@ -33,6 +33,24 @@
                 <img src=".jpg" style="border:4px solid black;margin-left:10%">
                 <br><h2>&emsp;&emsp;Placeholder 2</h2>
                 <img src=".jpg" style="border:4px solid black;margin-left:10%">
+                <form action="https://www.paypal.com/cgi-bin/webscr" method="post" style="margin-left:5%"> 
+                    <!-- Identify your business so that you can collect the payments. --> 
+                    <input type="hidden" name="business" value=""> 
+                    <!-- Specify a Buy Now button. --> <input type="hidden" name="cmd" value="_xclick"> 
+                    <!-- Specify details about the item that buyers will purchase. --> 
+                    <input type="hidden" name="item_name" value="Scanner"> 
+                    <input type="hidden" name="amount" value="50.00"> 
+                    <input type="hidden" name="currency_code" value="USD"> 
+                    <!-- Provide a drop-down menu option field. --> 
+                    <br>
+                    <input type="hidden" name="on0" value="Type"><h2 style="margin-left:-1%;margin-bottom:-0.0%"><b>Purchase Now!</b></h2> 
+                    <select name="os0"> <option value="Select Type">-- Select Type --</option> 
+                        <option value="Standard">Scanner</option> 
+                        <option value="Collapsable">Cart</option> 
+                    </select> <br /> <!-- Display the payment button. --> 
+                    <input type="image" name="submit" border="0" src="https://www.paypalobjects.com/en_US/i/btn/btn_buynow_LG.gif" alt="Buy Now"> 
+                    <img alt="" border="0" width="1" height="1" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" > 
+                </form>
             </div>
             <div class="columnright" align="right">
             </div>
@@ -86,6 +104,7 @@ div.infoContainer
     display: table;
     clear: both;
     width:100%;
+    margin-top:85px;
 }
 .columnleft
 {
