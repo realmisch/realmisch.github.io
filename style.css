@@ -18,17 +18,22 @@ section
 
 .hidden 
 {
+    margin:0px;
+    padding:0px;
     opacity:0;
     filter: blur(5px);
-    transform: translateX(-100%);
+    transform: translate(-100%);
     transition: all 1s;
 }
-
+.shift:nth-child(n)
+{
+    transition-delay:calc((n+1)*300ms);
+}
 .show
 {
     opacity:1;
     filter:blur(0);
-    transform: translateX(0);
+    transform: translate(0);
 }
 
 @media(prefers-reduced-motion) 
@@ -76,37 +81,6 @@ div.infoContainer
     top:-10%;
     border-radius: 15px;
 }
-.row
-{
-    position:relative;
-    z-index:0;
-    content: "";
-    display: table;
-    clear: both;
-    margin-top:130px;
-    width:100%;
-}
-.columnleft
-{
-    display:inline-block;
-    height:400px;
-    width:2.5%;
-}
-.columnmid
-{
-    display:inline-block;
-    width:94%;
-    border:2px solid black;
-    height:800px;
-    background:gray;
-    box-shadow: 0 0px 50px rgba(0,0,0,0.5);
-}
-.columnright
-{
-    display:inline-block;
-    height:400px;
-    width:2.5%;
-}
 footer
 {
     position:relative;
@@ -127,7 +101,14 @@ footer div
     border:3px solid black;
     overflow-x:hidden;
 }
-p.link1
+p.link
+{
+    cursor:pointer;
+    position:relative;
+    font-size:25;
+    float: left;
+}
+p.linkcont
 {
     cursor:pointer;
     position:relative;
@@ -136,12 +117,14 @@ p.link1
 }
 .underbar
 {
+    top:35px;
     width: 0px;
     height: 5px;
     background: none;
     position: relative;
+    transition: 0.5s ease;
 }
-p.link1:hover + div.underbar
+p.link:hover + div.underbar
 {
     position: relative;
     width: 75px;
@@ -150,22 +133,22 @@ p.link1:hover + div.underbar
     background: black;
     transition: 0.5s ease;
 }
-.link2:hover ~ .underbar
+p.linkcont:hover + div.underbar
 {
-    top:-20px;
-    width: 75px;
-    height: 3px;
-    background: black;
     position: relative;
-    -webkit-transition: 0.5s ease;
-}
-.link3:hover ~ .underbar
-{
-    top: -20px;
     width: 90px;
+    top:35px;
     height: 3px;
     background: black;
-    position: relative;
     transition: 0.5s ease;
 }
+.image
+{
+    display:block;
+    width:200px;
+    height:200px;
+    padding:-1px;
+    margin:-3px;
+}
+
 

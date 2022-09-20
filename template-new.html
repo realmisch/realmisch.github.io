@@ -6,24 +6,24 @@
         <link rel="stylesheet" href="style.css">
         <script defer src="app.js"></script>
     </head>
-    <header>
+    <header style="z-index:2;">
         <div id="top" class="header" style="background:black" border="0">
             <img onClick="parent.location='index.html'" style="cursor:pointer" src="Gif/GifFinished.gif" width="130px" align="left">
             <span class="title"><p><i><b>Radical Energy & Materials&emsp;</b></i></p></span>
         </div>
         <div style="clear:both;"></div>
-        <div class="infoContainer" style="background:#81cdff" align="right">
+        <div class="infoContainer" style="position:relative;background:#81cdff;" align="right">
             <table height="15%" style="position:relative;top:-7px;border-spacing:20px 0px;">
                 <td>
-                    <p class="link1" onClick="parent.location='Directed Page.html'"><b>About Us&emsp;</b></p>
+                    <p class="link" onClick="parent.location='Directed Page.html'"><b>About Us&emsp;</b></p>
                     <div class="underbar"></div> 
                 </td>
                 <td>
-                    <p class="link2" onClick="parent.location='Product.html'"><b>Products&emsp;</b></p>
+                    <p class="link" onClick="parent.location='Product.html'"><b>Products&emsp;</b></p>
                     <div class="underbar"></div> 
                 </td>
                 <td>
-                    <p class="link3" onClick="parent.location='Contact.html'"><b>Contact Us&emsp;</b></p>
+                    <p class="linkcont" onClick="parent.location='Contact.html'"><b>Contact Us&emsp;</b></p>
                     <div class="underbar"></div> 
                 </td>
                 <td>
@@ -33,18 +33,11 @@
         </div>
     </header>
     <body>
-        <section class="hidden">
-            <h1>Radical Energy and Materials</h1>
+        <section>
+            <h1 class="hidden shift" style="position:relative;z-index:1;">Radical Energy & Materials</h1>
+            <p class="hidden shift" style="position:relative;z-index:1;">A Stable Company in a Radioactive World</p>
         </section>
-        <section class="hidden">
-            <h2>
-                Test
-            </h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-        </section>
-        <section class="hidden">
-            <h1>Test2</h1>
-        </section>
+        <img src="MainImage.jpg" style="position:relative;border:4px solid black;width:100%;top:-550px;z-index:0;">
     </body>
     <footer>
         <div>
