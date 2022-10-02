@@ -1,174 +1,65 @@
+<!DOCTYPE html>
 <html>
     <head>
         <title>Radical Energy & Materials</title>
-        <link rel="icon" href="../LogoRounded.png"/>
+        <link rel="icon" href="LogoRounded.png"/>
+        <link rel="stylesheet" href="../style.css">
+        <script defer src="app.js"></script>
     </head>
-    <header>
-        <div id="top" class="header" style="background:black" border="0">
-            <img onClick="parent.location='../index.html'" style="cursor:pointer" src="../Gif/GifFinished.gif" height="95%" align="left">
+    <header style="z-index:2;background-color:#131316">
+        <div id="top" class="header" border="0">
+            <img onClick="parent.location='../index.html'" style="cursor:pointer" src="../Gif/GifFinished.gif" width="130px" align="left">
             <span class="title"><p><i><b>Radical Energy & Materials&emsp;</b></i></p></span>
         </div>
         <div style="clear:both;"></div>
-        <div class="infoContainer" style="background:#81cdff" align="right">
-            <table height="15%">
+        <div class="infoContainer" style="position:relative;background:#81cdff;" align="right">
+            <table height="15%" style="position:relative;top:-7px;border-spacing:20px 0px;">
                 <td>
-                    <p onClick="parent.location='../Directed Page.html'" style="cursor:pointer;position:relative;font-size:25;"><b>About Us&emsp;</b></p>
+                    <p class="link" onClick="parent.location='../Directed Page.html'"><b>About Us&emsp;</b></p>
+                    <div class="underbar"></div> 
                 </td>
                 <td>
-                    <p onClick="parent.location='../Product.html'" style="cursor:pointer;position:relative;font-size:25;"><b>Products&emsp;</b></p>
+                    <p class="link" onClick="parent.location='../Product.html'"><b>Products&emsp;</b></p>
+                    <div class="underbar"></div> 
                 </td>
                 <td>
-                    <p onClick="parent.location='../Contact.html'" style="cursor:pointer;position:relative;font-size:25;"><b>Contact Us&emsp;</b></p>
+                    <p class="linkcont" onClick="parent.location='../Contact.html'"><b>Contact Us&emsp;</b></p>
+                    <div class="underbar"></div> 
                 </td>
-            </table>         
+                <td>
+                    <p>&emsp;&emsp;</p>
+                </td>
+            </table>        
         </div>
     </header>
-    <body style="background:silver">
-        <div class="row">
-            <div class="columnleft">
-            </div>
-            <div class="columnmid" align="center">
-                <h1>
-                    Alli Singer
-                </h1>
-                <img src="singer.jpg" class="image">
-                <h2 align="left" style="margin:5%;margin-top:1%;">
-                    &emsp;&emsp;A young serial entrepreneur and graduate with a proven track record of growing and harvesting
-                    young start ups towards success. While Allison is just starting off in the early years of her
-                    career, she’s rapidly climbing the leadership ladder in Corporate America and has started a
-                    variety of entrepreneurial ventures of her own. During this time, Allison’s had experience
-                    working various roles including operations, finance, marketing, management, sales, customer
-                    solutions, and product development. The knowledge she’s gained in the real world and her
-                    Bachelor’s degree in Marketing and Management allow her to understand business needs and
-                    provide vital insights into best practices for overall business success.<br><br>
-                    &emsp;&emsp;Allison hopes to support the REM team on any business related questions or concerns, while
-                    taking on the role as Chief Financial Officer. Although Allison is still new in the nuclear medicine
-                    industry, she’s excited to learn, grow, and help the team create a solution that supports a safe
-                    and efficient way to dispose low level nuclear waste in hospitals.<br>
-                </h2>
-                <h2 align="center">
-                    <a href="https://www.linkedin.com/in/allisonsinger/" target="_blank">Linkedin</a>
-                </h2>
-            </div>
-            <div class="columnright" align="right">
-
-            </div>
+    <body>
+        <div style="position:relative;margin:10%;margin-top:12%;">
+            <h1 style="position:relative;text-align:center">
+                Alli Singer
+            </h1>
+            <img src="singer.jpg" class="imageProf">
+            <h2 align="left" style="margin:5%;margin-top:1%;">
+                &emsp;&emsp;A young serial entrepreneur and graduate with a proven track record of growing and harvesting
+                young start ups towards success. While Allison is just starting off in the early years of her
+                career, she’s rapidly climbing the leadership ladder in Corporate America and has started a
+                variety of entrepreneurial ventures of her own. During this time, Allison’s had experience
+                working various roles including operations, finance, marketing, management, sales, customer
+                solutions, and product development. The knowledge she’s gained in the real world and her
+                Bachelor’s degree in Marketing and Management allow her to understand business needs and
+                provide vital insights into best practices for overall business success.<br><br>
+                &emsp;&emsp;Allison hopes to support the REM team on any business related questions or concerns, while
+                taking on the role as Chief Financial Officer. Although Allison is still new in the nuclear medicine
+                industry, she’s excited to learn, grow, and help the team create a solution that supports a safe
+                and efficient way to dispose low level nuclear waste in hospitals.<br>
+            </h2>
+            <h2 align="center">
+                <a href="https://www.linkedin.com/in/allisonsinger/" target="_blank">Linkedin</a>
+            </h2>
         </div>
     </body>
     <footer>
-        <div></div>
+        <div>
+
+        </div>
     </footer>
 </html>
-<style>
-header
-{
-    margin:-10px;
-    height:130px;
-    position:fixed;
-    top:0;
-    width:100%;
-    margin-bottom:0px;
-    z-index:1;
-    background-color: black;
-}
-.image
-{
-    height:400px;
-    width:400px;
-    border:4px solid black;
-    padding:-1px;
-    margin:-3px;
-}
-.Name
-{
-    position:inline-block;
-    font-size:+20;
-    width:50%;
-    font-weight:bold;
-}
-span.title p
-{
-    float:right;
-    display:inline-block;
-    text-align:right;
-    margin-top:2.75%;
-    right:-70%;
-    font-size:+35;
-    color:#81cdff;
-}
-div.infoContainer
-{
-    position:relative;
-    border:3px solid black;
-    z-index:0;
-    margin:0px;
-    top:-10%;
-}
-.row
-{
-    position:relative;
-    z-index:0;
-    content: "";
-    display: table;
-    clear: both;
-    margin-top:130px;
-    width:100%;
-}
-.columnleft
-{
-    display:inline-block;
-    height:400px;
-    float: left;
-    width:2.5%;
-}
-.columnmid
-{
-    display:inline-block;
-    width:94%;
-    border:2px solid black;
-    height:950px;
-    background:gray;
-    box-shadow: 0 0px 50px rgba(0,0,0,0.5);
-}
-.columnright
-{
-    display:inline-block;
-    height:500px;
-    float: right;
-    width:2.5%;
-}
-.columnmid h1 span
-{
-    position:relative;
-    right:-60px;
-}
-.columnmid h3
-{
-    position:relative;
-    right:-120px;
-    word-break:break-word;
-    width:calc(100%-40px);
-}
-.body
-{
-    margin-top:240px;
-}
-footer
-{
-    position:relative;
-    width:101%;
-    right:2px;
-    background:black;
-    margin:-7px;
-    margin-top:-2px;
-    height:60px;
-    overflow-x:hidden;
-    z-index:1;
-}
-footer div
-{
-    background:#81cdff;
-    height:15px;
-    border:3px solid black;
-}
-</style>
